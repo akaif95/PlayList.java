@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+class Playlist {
+  
+  public static void main(String[] args) {
+    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+    
+    desertIslandPlaylist.add("SONG I");
+    desertIslandPlaylist.add("SONG II");
+    desertIslandPlaylist.add("SONG III");
+    desertIslandPlaylist.add("SONG IV");
+    desertIslandPlaylist.add("SONG V");
+    desertIslandPlaylist.add("SONG VI");
+    desertIslandPlaylist.add("SONG VII");
+    
+    System.out.println("You have a total of " + desertIslandPlaylist.size() + " songs in your playlist");
+    
+    System.out.println(desertIslandPlaylist);
+
+    
+    System.out.println("Uh-oh! You have too many songs! Only 5 can be held at a time.");
+    System.out.println("REMOVING EXTRA DATA.......");
+    
+    System.out.println( desertIslandPlaylist[5]+ "has been removed");
+    desertIslandPlaylist.remove("SONG VI");
+    
+      System.out.println( desertIslandPlaylist[6]+ "has been removed");
+    desertIslandPlaylist.remove("SONG VII");
+  
+    
+  }
+  
+}
